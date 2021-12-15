@@ -2,9 +2,11 @@ name: ci
 
 on:
   push:
+    branches:
+      - 'master'
 
 jobs:
-  buildx:
+  docker:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
